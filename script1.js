@@ -18,7 +18,7 @@ function generateButtons() {
 	document.getElementById('result').textContent = '';
 	winningButtonIndex = Math.floor(Math.random() * buttonCount);
 	for (let i = 0; i < buttonCount; ++i) {
-		const button = document.createElement('button');
+		let button = document.createElement('button');
                 button.className = 'btn btn-outline-secondary';
                 button.textContent = 'Buton' + (i + 1);
                 button.onclick = () => checkButton(i);
