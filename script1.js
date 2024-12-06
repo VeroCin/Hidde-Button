@@ -3,10 +3,10 @@ let winningButtonIndex;
 function checkButton(clickedIndex) {
 	let resultElement = document.getElementById('result');
 	if (clickedIndex === winningButtonIndex) {
-		resultElement.textContent = 'câștigător!';
+		resultElement.textContent = 'Winner!';
                 resultElement.style.color = 'green';
 	} else {
-                resultElement.textContent = 'necâștigător.';
+                resultElement.textContent = 'Not a winner!';
                 resultElement.style.color = 'red';
 	}
 }
