@@ -1,7 +1,7 @@
 let winningButtonIndex;
 
 function checkButton(clickedIndex) {
-	let resultElement = document.getElementById('result');
+	const resultElement = document.getElementById('result');
 	if (clickedIndex === winningButtonIndex) {
 		resultElement.textContent = 'Winner!';
                 resultElement.style.color = 'green';
@@ -12,8 +12,8 @@ function checkButton(clickedIndex) {
 }
 
 function generateButtons() {
-	let buttonCount = parseInt(document.getElementById('buttonCount').value);
-	let container = document.getElementById('buttons-container');
+	const buttonCount = parseInt(document.getElementById('buttonCount').value);
+	const container = document.getElementById('buttons-container');
 	container.innerHTML = '';
 	document.getElementById('result').textContent = '';
 	winningButtonIndex = Math.floor(Math.random() * buttonCount);
